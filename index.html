@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUEGO</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Juego de Velocidad de Tipeo</h1>
+        <!--Inicio-->
+        <div id="inicio">
+            <img src="img/img.png" alt="">
+            <p>¿Cuántas palabras puedes tipear en 1 Minuto?</p>
+            <button class="button" onclick="comenzarJuego()">COMENZAR JUEGO</button>
+        </div>
+        <!--Pantalla Juego-->
+        <div class="juego" id="juego">
+            <div id="tiempo" class="tiempo">59</div>
+            <div id="palabra" class="palabra_estilo">PALABRA</div>
+            <input type="text" placeholder="Escribe aquí..." id="palabra_ingresada" class="entrada" onkeyup="comparar()">
+            <div class="listado" id="registro">
+                <h3>Palabras tipeadas</h3>
+                <span></span>
+            </div>
+        </div>
+        <!--Pantalla Final-->
+        <div class="estilo_final" id="final">
+            <p class="texto_final">Palabras tipeadas en un minuto</p>
+            <div class="estilo_cantidad_final" id="cantidad_final">30</div>
+            <a href="index.html" class="button">JUGAR DE NUEVO </a>  
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
